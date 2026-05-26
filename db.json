@@ -1,4 +1,11 @@
 {
-  "gameData": {},
+  "gameData": {
+    "judge": "",
+    "judgePwd": "",
+    "roles": {},
+    "players": [],
+    "msg": "",
+    "locked": false
+  },
   "roleConfig": []
 }
