@@ -1,11 +1,73 @@
 {
-  "gameData": {
-    "judge": "",
-    "judgePwd": "",
-    "roles": {},
-    "players": [],
-    "msg": "",
-    "locked": false
+  "roomData": {
+    "judge": "乌龙",
+    "roles": {
+      "预言家": 1,
+      "猎人": 1,
+      "普通狼人": 1
+    },
+    "enableGodPower": false,
+    "players": [
+      {
+        "uuid": "c3f1a6bf-48ed-4165-8946-6fd0bc1ab144",
+        "name": "乌龙",
+        "role": "上帝",
+        "seq": 0,
+        "dead": false
+      }
+    ],
+    "msg": "对局已创建",
+    "votes": {},
+    "abandons": []
   },
-  "roleConfig": []
+  "roleData": {
+    "roleListArr": [
+      {
+        "name": "预言家",
+        "desc": "每晚可查验 1 名玩家，得知其 “好人 / 狼人”，无法辨具体身份。",
+        "enabled": true
+      },
+      {
+        "name": "女巫",
+        "desc": "有1 瓶解药 + 1 瓶毒药；每晚可救 1 名被刀玩家，或毒 1 名玩家；同晚不能用两瓶，可自救（规则可变）。",
+        "enabled": true
+      },
+      {
+        "name": "猎人",
+        "desc": "被刀 / 被投票出局可开枪带走 1 人；被毒 / 被白狼王带则不能开枪。",
+        "enabled": true
+      },
+      {
+        "name": "守卫",
+        "desc": "每晚守护 1 名玩家（可守自己），被守玩家当夜免疫狼刀；不可连续两晚守同一人。",
+        "enabled": true
+      },
+      {
+        "name": "白痴",
+        "desc": "白天被投票出局可翻牌免死，但此后失去投票权；狼需在夜里刀死白痴才能淘汰。",
+        "enabled": false
+      },
+      {
+        "name": "平民",
+        "desc": "无特殊能力，全程闭眼，靠发言与分析辨狼。",
+        "enabled": true
+      },
+      {
+        "name": "普通狼人",
+        "desc": "每晚团队睁眼，刀 1 名玩家；白天可发言、投票，可自爆（终止发言直接入夜）。",
+        "enabled": true
+      },
+      {
+        "name": "白狼王",
+        "desc": "白天可自爆并带走 1 名玩家（发言阶段随时发动）；无夜间刀人技能，与普通狼共处。",
+        "enabled": false
+      },
+      {
+        "name": "狼美人",
+        "desc": "每晚魅惑 1 名玩家；被投票 / 被猎人开枪时，魅惑对象殉情（无技能）；不可自爆。",
+        "enabled": false
+      }
+    ]
+  },
+  "$schema": "./node_modules/json-server/schema.json"
 }
