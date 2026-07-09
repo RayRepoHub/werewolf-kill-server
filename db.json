@@ -1,71 +1,250 @@
 {
   "roomData": {
-    "judge": "乌龙",
+    "judge": "卡卡罗特",
+    "hasThird": false,
+    "hasGod": true,
+    "enableSheriff": false,
     "roles": {
-      "预言家": 1,
-      "猎人": 1,
-      "普通狼人": 1
+      "强盗": 1,
+      "捣蛋鬼": 1,
+      "酒鬼": 1
     },
     "enableGodPower": false,
+    "roomPwd": "",
     "players": [
       {
-        "uuid": "c3f1a6bf-48ed-4165-8946-6fd0bc1ab144",
-        "name": "乌龙",
+        "uuid": "48857230-98c4-4659-a992-4a8187a0ed9c",
+        "name": "卡卡罗特",
         "role": "上帝",
         "seq": 0,
-        "dead": false
+        "dead": false,
+        "thirdMark": "",
+        "usedSkillKeys": [],
+        "sheriff": false,
+        "showCard": false,
+        "oneNightRole": "上帝"
+      },
+      {
+        "uuid": "816c3c36-7e53-43f4-9165-249f06d2b3ca",
+        "name": "刘玄德",
+        "role": "捣蛋鬼",
+        "seq": 1,
+        "dead": true,
+        "thirdMark": "",
+        "usedSkillKeys": [],
+        "sheriff": false,
+        "showCard": false,
+        "oneNightRole": "捣蛋鬼",
+        "roleId": "role_1782901968011md63hg3lrc",
+        "skills": [
+          "swap_two_players"
+        ]
+      },
+      {
+        "uuid": "cd683d6e-4853-405f-9a6a-5a9fb7baedff",
+        "name": "曹孟德",
+        "role": "酒鬼",
+        "seq": 2,
+        "dead": true,
+        "thirdMark": "",
+        "usedSkillKeys": [
+          "drunk_swap_center"
+        ],
+        "sheriff": false,
+        "showCard": false,
+        "oneNightRole": "强盗",
+        "roleId": "role_1782905487921zb71rabcwy",
+        "skills": [
+          "drunk_swap_center"
+        ],
+        "skillUsed": true,
+        "selfBomb": true
+      }
+    ],
+    "oneNightPlayers": [
+      {
+        "uuid": "48857230-98c4-4659-a992-4a8187a0ed9c",
+        "name": "卡卡罗特",
+        "role": "上帝",
+        "seq": 0,
+        "dead": false,
+        "thirdMark": "",
+        "usedSkillKeys": [],
+        "sheriff": false,
+        "showCard": false,
+        "oneNightRole": "上帝"
+      },
+      {
+        "uuid": "816c3c36-7e53-43f4-9165-249f06d2b3ca",
+        "name": "刘玄德",
+        "role": "捣蛋鬼",
+        "seq": 1,
+        "dead": false,
+        "thirdMark": "",
+        "usedSkillKeys": [],
+        "sheriff": false,
+        "showCard": false,
+        "oneNightRole": "捣蛋鬼",
+        "roleId": "role_1782901968011md63hg3lrc",
+        "skills": [
+          "swap_two_players"
+        ]
+      },
+      {
+        "uuid": "cd683d6e-4853-405f-9a6a-5a9fb7baedff",
+        "name": "曹孟德",
+        "role": "强盗",
+        "seq": 2,
+        "dead": false,
+        "thirdMark": "",
+        "usedSkillKeys": [],
+        "sheriff": false,
+        "showCard": false,
+        "oneNightRole": "",
+        "roleId": "",
+        "skills": []
       }
     ],
     "msg": "对局已创建",
     "votes": {},
-    "abandons": []
+    "abandons": [],
+    "hasBoomRole": true,
+    "boomRoleList": [
+      "role_1782899823131l9ts7172k3g",
+      "role_1782901968011md63hg3lrc",
+      "role_1782905487921zb71rabcwy"
+    ],
+    "hasShowRole": true,
+    "showRoleList": [
+      "role_1782899823131l9ts7172k3g",
+      "role_1782901968011md63hg3lrc",
+      "role_1782905487921zb71rabcwy"
+    ]
   },
   "roleData": {
     "roleListArr": [
       {
+        "skills": [
+          "see_two_center",
+          "see_one_player"
+        ],
+        "singleSkill": true,
+        "roleId": "role_17826456605656bs0tqrinob",
         "name": "预言家",
         "desc": "每晚可查验 1 名玩家，得知其 “好人 / 狼人”，无法辨具体身份。",
         "enabled": true
       },
       {
+        "skills": [],
+        "singleSkill": false,
+        "roleId": "role_1782645660565d5s5od20jgt",
         "name": "女巫",
         "desc": "有1 瓶解药 + 1 瓶毒药；每晚可救 1 名被刀玩家，或毒 1 名玩家；同晚不能用两瓶，可自救（规则可变）。",
         "enabled": true
       },
       {
+        "skills": [],
+        "singleSkill": false,
+        "roleId": "role_17826456605653hqags50pax",
         "name": "猎人",
         "desc": "被刀 / 被投票出局可开枪带走 1 人；被毒 / 被白狼王带则不能开枪。",
         "enabled": true
       },
       {
+        "skills": [],
+        "singleSkill": false,
+        "roleId": "role_1782645660565vtu8fqkki5k",
         "name": "守卫",
         "desc": "每晚守护 1 名玩家（可守自己），被守玩家当夜免疫狼刀；不可连续两晚守同一人。",
         "enabled": true
       },
       {
+        "skills": [],
+        "singleSkill": false,
+        "roleId": "role_1782645660565p55aqhl8bds",
         "name": "白痴",
         "desc": "白天被投票出局可翻牌免死，但此后失去投票权；狼需在夜里刀死白痴才能淘汰。",
         "enabled": false
       },
       {
+        "skills": [],
+        "singleSkill": false,
+        "roleId": "role_1782645660565br4ehpy4lh",
         "name": "平民",
         "desc": "无特殊能力，全程闭眼，靠发言与分析辨狼。",
         "enabled": true
       },
       {
+        "skills": [],
+        "singleSkill": false,
+        "roleId": "role_178264566056565xxs0klefk",
         "name": "普通狼人",
         "desc": "每晚团队睁眼，刀 1 名玩家；白天可发言、投票，可自爆（终止发言直接入夜）。",
         "enabled": true
       },
       {
+        "skills": [],
+        "singleSkill": false,
+        "roleId": "role_1782645660565gikpx233xt",
         "name": "白狼王",
         "desc": "白天可自爆并带走 1 名玩家（发言阶段随时发动）；无夜间刀人技能，与普通狼共处。",
         "enabled": false
       },
       {
+        "skills": [],
+        "singleSkill": false,
+        "roleId": "role_17826456605654m4ujj63a2x",
         "name": "狼美人",
         "desc": "每晚魅惑 1 名玩家；被投票 / 被猎人开枪时，魅惑对象殉情（无技能）；不可自爆。",
         "enabled": false
+      },
+      {
+        "skills": [],
+        "singleSkill": false,
+        "roleId": "role_17826456605655wi9iwmjme6",
+        "name": "恶灵骑士",
+        "desc": "不能自刀。恶灵骑士夜间与狼人一同行动，但无法自爆，且无法死在夜间。拥有一次性被动技能反伤：若被预言家查验，次日预言家出局；若被女巫使用毒药，次日女巫出局；被同验同毒，按先后顺序，先对恶灵骑士发动技能者死亡。但是，如果守卫选择守护恶灵骑士，则守卫不会出局。（猎人夜间发动技能无效，守卫守护被反伤玩家无效）",
+        "enabled": true
+      },
+      {
+        "skills": [
+          "rob_swap_player"
+        ],
+        "singleSkill": false,
+        "roleId": "role_1782899823131l9ts7172k3g",
+        "name": "强盗",
+        "desc": "与一名玩家互换身份，并查看对方身份",
+        "enabled": true
+      },
+      {
+        "skills": [
+          "swap_two_players"
+        ],
+        "singleSkill": false,
+        "roleId": "role_1782901968011md63hg3lrc",
+        "name": "捣蛋鬼",
+        "desc": "交换场上两名玩家的身份（不能包含自己）",
+        "enabled": true
+      },
+      {
+        "skills": [
+          "drunk_swap_center"
+        ],
+        "singleSkill": false,
+        "roleId": "role_1782905487921zb71rabcwy",
+        "name": "酒鬼",
+        "desc": "强制和剩余其中一张底牌互换，且无法查看置换后的身份",
+        "enabled": true
+      },
+      {
+        "roleId": "role_17829174461960pyleduw70t",
+        "name": "失眠者",
+        "desc": "查看自己当前真实身份",
+        "enabled": true,
+        "skills": [
+          "check_self_final"
+        ],
+        "singleSkill": false
       }
     ]
   },
